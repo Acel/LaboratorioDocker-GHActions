@@ -1,0 +1,4 @@
+### Ejercicio 1
+Se crea el archivo `.github/workflows/ci-frontend.yml`, cuyo objetivo es instalar las dependencias del frontend, hacer un build del proyecto y ejecutar los tests unitarios. Se ejecutará al hacer un pull-request sobre la rama main, que modifique archivos dentro del directorio `hangman-front/`. Incluye dos jobs: el primero (build) hará un checkout del repositorio, configura node 18 e instala sus dependencias y por último hace un build. El segundoi job (test), que es dependiente del primer job, hace lo mismo que el anterior, con la diferencia de que en lugar de hacer un build, corre los tests. Para probar el funcionamiento creo un rama, hago modificaciones y un pull request. Tras esto se ejecuta nuestro yml. Se puede comprobar que fallan los tests. No sé si es algo planeado o que he hecho algo mal yo.
+<img width="1901" height="720" alt="image" src="https://github.com/user-attachments/assets/afa21464-3b8c-4184-8828-c7b245c918fd" />
+
