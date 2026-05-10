@@ -30,4 +30,4 @@ jobs:
           context: ./hangman-front
           push: true
           tags: |
-            ghcr.io/acel/hangman-front:${{ github.sha }}
+            ghcr.io/${{ toLower(github.repository_owner) }}/hangman-front:${{ github.sha }}
