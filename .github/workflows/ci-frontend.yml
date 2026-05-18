@@ -4,6 +4,9 @@ on:
   pull_request:
     branches: [ main ]
     paths: [ 'hangman-front/**' ]
+  push:
+    branches: [ main ]
+    paths: [ 'hangman-front/**' ]
 
 jobs:
   build:
