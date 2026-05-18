@@ -6,3 +6,7 @@ Se crea el archivo `.github/workflows/ci-frontend.yml`, cuyo objetivo es instala
 ### Ejercicio 2
 Se crea el archivo `.github/workflows/cd-frontend.yml`, cuya ejecución manual construye y publica en GHCR una imagen docker de nuestro frontend. Para esto hace lo siguiente: checkout del repositorio, comprobación de la versión de docker, login en GHCR usando el token de github, configuración de docker buildx y construcción y publicación de la imagen en el anteriormente mencionado repositorio. Al ejecutarlo me da un error porque mi usuario tiene una letra en mayúscula. Lo he intentado arreglar de varios modos, pero no he sido capaz. Se pueden ver los commits y los intentos de ejecución.
 <img width="1134" height="508" alt="image" src="https://github.com/user-attachments/assets/0e1642b0-5c21-4dee-a2c4-1a01b7f54d03" />
+
+### Ejercicio 3
+Se crea el archivo `.github/workflows/e2e.yml`, que al ser ejecutado manualmente, levantará nuestras imágenes y correrá los tests. Para ello se hará un checkout del repositorio, tras lo cual arrancaremos los dos contenedores, con nuestra api y nuestro front. Posteriormente se instalan las dependencias. Y por último, se llama a la ejecución de los tests propiamente dichos. Tras esto, desde la pestaña de actions se realiza una ejecución manual, cuyo resultado es el siguiente:
+<img width="719" height="638" alt="image" src="https://github.com/user-attachments/assets/f16f1733-a25c-4f56-88a2-28134d8cf44d" />
